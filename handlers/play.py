@@ -420,7 +420,7 @@ async def play(_, message: Message):
                       if administrator == message.from_user.id:  
                           try:
                               invitelink = await _.export_chat_invite_link(chat_id)
-                            if invitelink.startswith("https://t.me/+"):
+                            if invitelink.startswith("https://t.me/+")
                                 invitelink = invitelink.replace("https://t.me/+","https://t.me/joinchat/")
                           except:
                               await lel.edit(
